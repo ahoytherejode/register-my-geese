@@ -1,0 +1,75 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="05-how-many-geese">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="07-geese-location" method="post">
+
+<!-- geese related questions go here -->
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-heading-xl">
+                What breed of goose are they?
+              </h1>
+            </legend>
+            <div id="goose-breed-hint" class="govuk-hint">
+              Select all that apply.
+            </div>
+            <div class="govuk-checkboxes">
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="goose-breed" name="goose-breed" type="checkbox" value="african">
+                <label class="govuk-label govuk-checkboxes__label" for="goose-breed">
+                  African
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="goose-breed-2" name="goose-breed" type="checkbox" value="buff">
+                <label class="govuk-label govuk-checkboxes__label" for="goose-breed-2">
+                  Buff
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="goose-breed-3" name="goose-breed" type="checkbox" value="chinese">
+                <label class="govuk-label govuk-checkboxes__label" for="goose-breed-3">
+                  Chinese
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="goose-breed-4" name="goose-breed" type="checkbox" value="roman-tufted">
+                <label class="govuk-label govuk-checkboxes__label" for="goose-breed-4">
+                  Roman Tufted
+                </label>
+              </div>
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="goose-breed-5" name="goose-breed" type="checkbox" value="toulouse">
+                <label class="govuk-label govuk-checkboxes__label" for="goose-breed-5">
+                  Toulouse
+                </label>
+              </div>
+            </div>
+
+          </fieldset>
+        </div>
+
+<!-- geese related questions end here -->
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

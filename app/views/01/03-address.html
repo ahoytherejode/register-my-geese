@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="02-date-of-birth">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="04-summary" method="post">
+
+<!-- geese related questions go here -->
+
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <h1 class="govuk-fieldset__heading">
+          What is your address?
+        </h1>
+      </legend>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-name">
+          House name or number
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-name" name="address-name" type="text"></div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-street">
+          Street
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-street" name="address-street" type="text"></div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-town">
+          Town or city
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-town" name="address-town" type="text"></div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-county">
+          County
+        </label>
+        <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text"></div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="address-postcode">
+          Postcode
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text"></div>
+
+    </fieldset>
+
+<!-- geese related questions end here -->
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
